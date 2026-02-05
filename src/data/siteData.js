@@ -41,6 +41,6 @@ export const features = [
 
 export const steps = [
   { number: '1', title: 'Chọn mẫu', description: 'Xem bộ sưu tập và chọn kiểu bạn thích', icon: '🔍' },
-  { number: '2', title: 'Chọn màu & kích thước', description: 'Tùy chỉnh màu sắc và kích thước theo yêu cầu', icon: '🎨' },
+  { number: '2', title: 'Chọn màu & kiểu cá nhân hóa', description: 'Tùy chỉnh màu sắc và kích thước theo yêu cầu', icon: '🎨' },
   { number: '3', title: 'Xác nhận & nhận hàng', description: 'Đặt hàng và nhận tại địa chỉ của bạn', icon: '📦' }
 ];
