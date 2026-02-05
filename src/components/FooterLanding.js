@@ -5,7 +5,7 @@ export default function FooterLanding() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8 items-start">
           <div>
             <img src="/img/logo.jpg" alt="Knottie Handmade" className="w-40 mb-4" />
-            <p className="text-gray-400 mb-4">Làm bằng tay, với tình yêu dành cho bạn.</p>
+            <p className="text-gray-400 mb-4">𝐒𝐭𝐲𝐥𝐞 𝐢𝐧 𝐄𝐯𝐞𝐫𝐲 𝐊𝐧𝐨𝐭, 𝐌𝐚𝐝𝐞 𝐭𝐨 𝐁𝐞 𝐘𝐨𝐮</p>
           </div>
 
           <div>
