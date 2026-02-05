@@ -11,6 +11,7 @@ export default function FooterLanding() {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact</h4>
             <div className="space-y-2 text-gray-400">
+              <p>📍 Hoa Lac Hi-tech Park</p>
               <p>✉️ <a href="mailto:knotiee.handmade@gmail.com" className="hover:text-pink-400">knotiee.handmade@gmail.com</a></p>
               <p>📞 <a href="tel:+84352016203" className="hover:text-pink-400">0352 016 203</a></p>
             </div>
