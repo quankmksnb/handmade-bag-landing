@@ -3,9 +3,15 @@ import { useState } from 'react';
 import { products } from '../data/siteData';
 
 export default function ProductGrid({ onAddToCart }) {
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('all');
 
-  const filteredProducts = filter === 'All' ? products : products.filter(p => p.tag === filter);
+  const categories = [
+    { label: 'Tất cả', value: 'all' },
+    { label: 'Nổi bật', value: 'Nổi bật' },
+    { label: 'Mới', value: 'Mới' }
+  ];
+
+  const filteredProducts = filter === 'all' ? products : products.filter(p => p.tag === filter);
 
   return (
     <section id="products" className="py-16 sm:py-20 bg-white">
@@ -16,9 +22,9 @@ export default function ProductGrid({ onAddToCart }) {
         </div>
 
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {['Tất cả', 'Nổi bật', 'Mới'].map(category => (
-            <button key={category} onClick={() => setFilter(category)} className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${filter === category ? 'bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-lg' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}>
-              {category}
+          {categories.map(cat => (
+            <button key={cat.value} onClick={() => setFilter(cat.value)} className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${filter === cat.value ? 'bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-lg' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}>
+              {cat.label}
             </button>
           ))}
         </div>
