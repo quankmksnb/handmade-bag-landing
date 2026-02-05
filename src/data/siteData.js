@@ -1,51 +1,46 @@
 export const products = [
-  { id: 1, name: 'Mini Tote Bag', price: '$28', rating: 5, tag: 'Hot', image: 'product1' },
-  { id: 2, name: 'Crossbody Bag', price: '$35', rating: 5, tag: 'New', image: 'product2' },
-  { id: 3, name: 'Bucket Bag', price: '$42', rating: 4, tag: 'Hot', image: 'product3' },
-  { id: 4, name: 'Shopping Tote', price: '$38', rating: 5, tag: null, image: 'product4' },
-  { id: 5, name: 'Evening Clutch', price: '$25', rating: 4, tag: 'New', image: 'product5' },
-  { id: 6, name: 'Beach Bag', price: '$45', rating: 5, tag: 'Hot', image: 'product6' }
+  { id: 1, name: 'Túi Tote Mini', price: '$28', rating: 5, tag: 'Nổi bật', image: 'pro2.jpg' },
+  { id: 2, name: 'Túi Đeo Chéo', price: '$35', rating: 5, tag: 'Mới', image: 'pro3.jpg' },
+  { id: 3, name: 'Túi Bucket', price: '$42', rating: 4, tag: 'Nổi bật', image: 'pro4.jpg' },
+  { id: 4, name: 'Túi Tote Mua Sắm', price: '$38', rating: 5, tag: null, image: 'pro5.jpg' },
+  { id: 5, name: 'Túi Clutch Dạ Hội', price: '$25', rating: 4, tag: 'Mới', image: 'pro6.jpg' },
+  { id: 6, name: 'Túi Đi Biển', price: '$45', rating: 5, tag: 'Nổi bật', image: 'pro2.jpg' }
 ];
 
-export const reviews = [
-  { id: 1, name: 'Sarah Johnson', rating: 5, text: 'Absolutely love my crochet bag! The quality is amazing and the colors are so vibrant. Perfect for daily use!' },
-  { id: 2, name: 'Emma Williams', rating: 5, text: 'Beautiful craftsmanship! I got a custom name added and it turned out perfect. Worth every penny!' },
-  { id: 3, name: 'Olivia Brown', rating: 4, text: 'Super cute and sturdy! The inner lining is a nice touch. My friends keep asking where I got it.' },
-  { id: 4, name: 'Ava Davis', rating: 5, text: 'The bag exceeded my expectations! Shipped quickly and packaged beautifully. Highly recommend!' }
-];
+export const reviews = [];
 
 export const faqs = [
-  { 
-    question: 'How long does it take to make a bag?', 
-    answer: 'Each bag is handmade to order and typically takes 5-7 working days to complete, depending on the design complexity and customization requirements.' 
+  {
+    question: 'Mất bao lâu để hoàn thành một chiếc túi?',
+    answer: 'Mỗi túi được làm thủ công theo đơn và thường mất 5-7 ngày làm việc để hoàn thành, tùy thuộc vào kiểu dáng và yêu cầu cá nhân hóa.'
   },
-  { 
-    question: 'Can I customize the design?', 
-    answer: 'Absolutely! You can choose from our existing designs and customize the colors. We also offer personalization options like adding names or initials for an extra fee.' 
+  {
+    question: 'Có thể tùy chỉnh thiết kế không?',
+    answer: 'Có, bạn có thể chọn màu và yêu cầu thêm tên hoặc chữ ký trên túi với chi phí phụ.'
   },
-  { 
-    question: 'How do I wash the bag?', 
-    answer: 'Hand wash gently with mild soap in cold water. Avoid wringing. Lay flat to dry in a shaded area. Do not machine wash or bleach to maintain the shape and color.' 
+  {
+    question: 'Cách giặt túi như thế nào?',
+    answer: 'Giặt tay nhẹ với xà phòng dịu trong nước lạnh, không vắt mạnh, để phẳng nơi râm mát. Không giặt máy hoặc tẩy.'
   },
-  { 
-    question: 'Return & exchange policy', 
-    answer: 'We offer a 7-day return policy for unused items in original condition. Custom orders with personalization are non-refundable. Exchange is available for defective items.' 
+  {
+    question: 'Chính sách đổi trả?',
+    answer: 'Chúng tôi chấp nhận đổi trả trong 7 ngày cho sản phẩm chưa sử dụng và còn nguyên trạng. Đơn hàng cá nhân hóa không được hoàn tiền.'
   },
-  { 
-    question: 'Shipping time', 
-    answer: 'Nationwide shipping takes 3-5 business days after the bag is completed. Express shipping options are available for an additional fee. International shipping available upon request.' 
+  {
+    question: 'Thời gian giao hàng?',
+    answer: 'Giao hàng trong nước thường mất 3-5 ngày sau khi sản phẩm hoàn thành. Hỗ trợ giao nhanh và giao quốc tế theo yêu cầu.'
   }
 ];
 
 export const features = [
-  { icon: '🌈', title: 'Soft cotton yarn, long-lasting color', description: 'Premium quality yarn that stays vibrant wash after wash' },
-  { icon: '💪', title: 'Durable inner lining', description: 'Strong fabric lining protects your belongings and extends bag life' },
-  { icon: '🎨', title: 'Customizable colors & names', description: 'Make it uniquely yours with personalized colors and embroidery' },
-  { icon: '✋', title: 'Carefully handcrafted', description: 'Each stitch made with love and attention to detail' }
+  { icon: '🌈', title: 'Sợi cotton mềm, giữ màu bền', description: 'Sợi cao cấp giữ màu tươi sau nhiều lần giặt' },
+  { icon: '💪', title: 'Lót trong bền chắc', description: 'Lớp lót chắc chắn bảo vệ đồ dùng và tăng tuổi thọ túi' },
+  { icon: '🎨', title: 'Tùy chỉnh màu & tên', description: 'Tạo dấu ấn riêng với màu sắc và chữ ký cá nhân' },
+  { icon: '✋', title: 'Thủ công tỉ mỉ', description: 'Mỗi mũi móc được làm với tình yêu và tỉ mỉ' }
 ];
 
 export const steps = [
-  { number: '1', title: 'Choose a design', description: 'Browse our collection and pick your favorite style', icon: '🔍' },
-  { number: '2', title: 'Pick color & size', description: 'Customize with your preferred colors and dimensions', icon: '🎨' },
-  { number: '3', title: 'Confirm & receive delivery', description: 'Place your order and get it delivered to your door', icon: '📦' }
+  { number: '1', title: 'Chọn mẫu', description: 'Xem bộ sưu tập và chọn kiểu bạn thích', icon: '🔍' },
+  { number: '2', title: 'Chọn màu & kích thước', description: 'Tùy chỉnh màu sắc và kích thước theo yêu cầu', icon: '🎨' },
+  { number: '3', title: 'Xác nhận & nhận hàng', description: 'Đặt hàng và nhận tại địa chỉ của bạn', icon: '📦' }
 ];

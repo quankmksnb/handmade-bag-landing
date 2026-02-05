@@ -30,11 +30,11 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-pink-400 transition-colors">Products</button>
-            <button onClick={() => scrollToSection('reviews')} className="text-gray-700 hover:text-pink-400 transition-colors">Reviews</button>
-            <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-pink-400 transition-colors">Process</button>
-            <button onClick={() => scrollToSection('faq')} className="text-gray-700 hover:text-pink-400 transition-colors">FAQ</button>
-            <button onClick={() => scrollToSection('cta')} className="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">Buy Now</button>
+            <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-pink-400 transition-colors">Sản phẩm</button>
+            <button onClick={() => scrollToSection('reviews')} className="text-gray-700 hover:text-pink-400 transition-colors">Đánh giá</button>
+            <button onClick={() => scrollToSection('process')} className="text-gray-700 hover:text-pink-400 transition-colors">Quy trình</button>
+            <button onClick={() => scrollToSection('faq')} className="text-gray-700 hover:text-pink-400 transition-colors">Câu hỏi</button>
+            <button onClick={() => scrollToSection('cta')} className="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">Mua ngay</button>
           </div>
 
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-gray-700 p-2">
@@ -51,11 +51,11 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col gap-4">
-              <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Products</button>
-              <button onClick={() => scrollToSection('reviews')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Reviews</button>
-              <button onClick={() => scrollToSection('process')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Process</button>
-              <button onClick={() => scrollToSection('faq')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">FAQ</button>
-              <button onClick={() => scrollToSection('cta')} className="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-6 py-2.5 rounded-full text-center hover:shadow-lg transition-all">Buy Now</button>
+              <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Sản phẩm</button>
+              <button onClick={() => scrollToSection('reviews')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Đánh giá</button>
+              <button onClick={() => scrollToSection('process')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Quy trình</button>
+              <button onClick={() => scrollToSection('faq')} className="text-left text-gray-700 hover:text-pink-400 transition-colors">Câu hỏi</button>
+              <button onClick={() => scrollToSection('cta')} className="bg-gradient-to-r from-pink-400 to-purple-400 text-white px-6 py-2.5 rounded-full text-center hover:shadow-lg transition-all">Mua ngay</button>
             </div>
           </div>
         )}
