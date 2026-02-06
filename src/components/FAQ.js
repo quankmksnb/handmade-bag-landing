@@ -15,7 +15,7 @@ export default function FAQ() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl shadow-md overflow-hidden">
+            <div key={index} data-aos="fade-up" data-aos-delay={index * 100} className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl shadow-md overflow-hidden hover:shadow-lg hover:scale-102 transition-all duration-300">
               <button onClick={() => setOpenIndex(openIndex === index ? null : index)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-white/50 transition-colors">
                 <span className="font-bold text-gray-900 text-lg pr-4">{faq.question}</span>
                 <span className={`text-2xl text-pink-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>↓</span>

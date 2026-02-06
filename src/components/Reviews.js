@@ -21,8 +21,8 @@ export default function Reviews() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {reviews.map(review => (
-            <div key={review.id} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+          {reviews.map((review, index) => (
+            <div key={review.id} data-aos="fade-up" data-aos-delay={index * 100} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <div className="flex mb-4">{[...Array(5)].map((_, i) => (<span key={i} className={i < review.rating ? 'text-yellow-400 text-xl' : 'text-gray-300 text-xl'}>★</span>))}</div>
               <p className="text-gray-600 mb-4 italic">"{review.text}"</p>
               <div className="flex items-center gap-3">

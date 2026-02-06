@@ -30,14 +30,14 @@ export default function ProductGrid({ onAddToCart }) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {filteredProducts.map(product => {
+          {filteredProducts.map((product, index) => {
             const imgs = ['tuideocheo.jpg','tuiclutch.jpg','tuideovai.jpg','chamsoilen.jpg','chamsoivai.jpg'];
             const imgSrc = `/img/${imgs[(product.id - 1) % imgs.length]}`;
             return (
-              <div key={product.id} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                <div className="relative">
-                  <div className="h-80 sm:h-120 flex items-center justify-center bg-gray-100">
-                    <img src={imgSrc} alt={product.name} className="w-full h-full object-cover" />
+              <div key={product.id} data-aos="fade-up" data-aos-delay={index * 100} className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden group">
+                <div className="relative overflow-hidden">
+                  <div className="h-80 sm:h-96 flex items-center justify-center bg-gray-100 group-hover:bg-gray-200">
+                    <img src={imgSrc} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   {product.tag && (
                     <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-white text-sm font-semibold ${product.tag === 'Hot' ? 'bg-red-400' : 'bg-green-400'}`}>{product.tag}</div>
