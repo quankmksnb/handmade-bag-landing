@@ -36,7 +36,7 @@ export default function ProductGrid({ onAddToCart }) {
             return (
               <div key={product.id} data-aos="fade-up" data-aos-delay={index * 100} className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden group">
                 <div className="relative overflow-hidden">
-                  <div className="h-80 sm:h-96 flex items-center justify-center bg-gray-100 group-hover:bg-gray-200">
+                  <div className="h-80 sm:h-120 flex items-center justify-center bg-gray-100 group-hover:bg-gray-200">
                     <img src={imgSrc} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
                   {product.tag && (
