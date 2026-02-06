@@ -1,0 +1,37 @@
+.cursor-bag {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  z-index: 998;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 8px rgba(212, 71, 107, 0.4));
+  animation: bag-bounce 0.6s ease-in-out infinite;
+}
+
+@keyframes bag-bounce {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Hide cursor on desktop */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+/* Show cursor on mobile devices */
+@media (pointer: coarse) {
+  .cursor-bag {
+    display: none;
+  }
+  
+  body {
+    cursor: auto;
+  }
+}
