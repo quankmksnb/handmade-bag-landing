@@ -1,6 +1,6 @@
 export const products = [
   { id: 1, name: 'Túi Đeo Chéo', price: '$28', rating: 5, tag: 'Túi', image: 'tuideocheo.jpg' },
-  { id: 2, name: 'Túi Cluthch', price: '$35', rating: 5, tag: 'Túi', image: 'tuiclutch.jpg' },
+  { id: 2, name: 'Túi Clutch', price: '$35', rating: 5, tag: 'Túi', image: 'tuiclutch.jpg' },
   { id: 3, name: 'Túi Đeo Vai', price: '$42', rating: 4, tag: 'Túi', image: 'tuideovai.jpg' },
   { id: 4, name: 'Charm Sợi Len', price: '$38', rating: 5, tag: 'Charm', image: 'chamsoilen.jpg' },
   { id: 5, name: 'Charm Sợi Vải', price: '$25', rating: 4, tag: 'Charm', image: 'chamsoivai.jpg' }
