@@ -36,7 +36,7 @@ export default function ProductGrid({ onAddToCart }) {
             return (
               <div key={product.id} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <div className="relative">
-                  <div className="h-64 sm:h-72 flex items-center justify-center bg-gray-100">
+                  <div className="h-80 sm:h-120 flex items-center justify-center bg-gray-100">
                     <img src={imgSrc} alt={product.name} className="w-full h-full object-cover" />
                   </div>
                   {product.tag && (
@@ -46,10 +46,6 @@ export default function ProductGrid({ onAddToCart }) {
 
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h3>
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="flex">{[...Array(5)].map((_, i) => (<span key={i} className={i < product.rating ? 'text-yellow-400' : 'text-gray-300'}>★</span>))}</div>
-                    <span className="text-sm text-gray-500">({product.rating}.0)</span>
-                  </div>
                 </div>
               </div>
             );
