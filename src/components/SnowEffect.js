@@ -21,7 +21,7 @@ export default function SnowEffect() {
       snowflake.style.animationDelay = Math.random() * 2 + 's';
       
       // Random font size
-      const size = Math.random() * 30 + 25;
+      const size = Math.random() * 15 + 10;
       snowflake.style.fontSize = size + 'px';
       
       // Random opacity
@@ -35,10 +35,10 @@ export default function SnowEffect() {
     
     // Create snowflakes periodically
     const interval = setInterval(() => {
-      if (document.querySelectorAll('.snowflake').length < 100) {
+      if (document.querySelectorAll('.snowflake').length < 60) {
         createSnowflake();
       }
-    }, 150);
+    }, 250);
     
     return () => clearInterval(interval);
   }, []);
