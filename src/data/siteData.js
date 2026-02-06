@@ -1,10 +1,9 @@
 export const products = [
-  { id: 1, name: 'Túi Tote Mini', price: '$28', rating: 5, tag: 'Nổi bật', image: 'pro2.jpg' },
-  { id: 2, name: 'Túi Đeo Chéo', price: '$35', rating: 5, tag: 'Mới', image: 'pro3.jpg' },
-  { id: 3, name: 'Túi Bucket', price: '$42', rating: 4, tag: 'Nổi bật', image: 'pro4.jpg' },
-  { id: 4, name: 'Túi Tote Mua Sắm', price: '$38', rating: 5, tag: null, image: 'pro5.jpg' },
-  { id: 5, name: 'Túi Clutch Dạ Hội', price: '$25', rating: 4, tag: 'Mới', image: 'pro6.jpg' },
-  { id: 6, name: 'Túi Đi Biển', price: '$45', rating: 5, tag: 'Nổi bật', image: 'pro2.jpg' }
+  { id: 1, name: 'Túi Deo Chéo', price: '$28', rating: 5, tag: 'Túi', image: 'tuideocheo.jpg' },
+  { id: 2, name: 'Túi Cluthch', price: '$35', rating: 5, tag: 'Túi', image: 'tuiclutch.jpg' },
+  { id: 3, name: 'Túi Đeo Vai', price: '$42', rating: 4, tag: 'Túi', image: 'tuideovai.jpg' },
+  { id: 4, name: 'Charm Sợi Len', price: '$38', rating: 5, tag: 'Charm', image: 'chamsoilen.jpg' },
+  { id: 5, name: 'Charm Sợi Vải', price: '$25', rating: 4, tag: 'Charm', image: 'chamsoivai.jpg' }
 ];
 
 export const reviews = [];

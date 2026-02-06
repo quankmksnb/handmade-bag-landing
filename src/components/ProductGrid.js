@@ -7,8 +7,8 @@ export default function ProductGrid({ onAddToCart }) {
 
   const categories = [
     { label: 'Tất cả', value: 'all' },
-    { label: 'Nổi bật', value: 'Nổi bật' },
-    { label: 'Mới', value: 'Mới' }
+    { label: 'Túi', value: 'Túi' },
+    { label: 'Charm', value: 'Charm' }
   ];
 
   const filteredProducts = filter === 'all' ? products : products.filter(p => p.tag === filter);
@@ -31,7 +31,7 @@ export default function ProductGrid({ onAddToCart }) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProducts.map(product => {
-            const imgs = ['pro2.jpg','pro3.jpg','pro4.jpg','pro5.jpg','pro6.jpg'];
+            const imgs = ['tuideocheo.jpg','tuiclutch.jpg','tuideovai.jpg','chamsoilen.jpg','chamsoivai.jpg'];
             const imgSrc = `/img/${imgs[(product.id - 1) % imgs.length]}`;
             return (
               <div key={product.id} className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
