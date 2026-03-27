@@ -6,7 +6,6 @@ export default function Reviews() {
       <section id="reviews" className="py-16 sm:py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Đánh giá khách hàng</h2>
-          <p className="text-lg text-gray-600">Chưa có đánh giá nào — bạn có thể là người đầu tiên!</p>
         </div>
       </section>
     );
